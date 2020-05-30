@@ -8,8 +8,6 @@
     <title>Sights</title>
     <!--Links-->
     <link rel="stylesheet" href="Resources/styles.css">
-
-
   </head>
 
   <body>
@@ -20,10 +18,21 @@
       <a href="#">Login</a>
     </div>
 
-    <span id="sidenavbutton" onclick="openNav()"> &#9776; </span>
+    <header>
+      <span class="sidenavbutton" onclick="openNav()"> &#9776; </span>
+      <h1>Sights</h1>
+    </header>
+
+    <div class="backgroundImageHolder">
+      <img id="backgroundImage" src="Images/Greenland.jpg">
+      <div id="buttonHolder">
+        <button>Get Started</button>
+      </div>
+    </div>
+
+    <p style="margin: 50px 20px 20px 20px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc </p>
 
   </body>
-
   <script>
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
