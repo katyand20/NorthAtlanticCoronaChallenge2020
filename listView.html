@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="Team04">
+    <meta name="description" content="Application Index Page">
+    <title>Sights</title>
+    <!--Links-->
+    <link rel="stylesheet" href="Resources/styles.css">
+  </head>
+
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times; </a>
+      <a href="index.html">Home</a>
+      <a href="mapView.html">Map View</a>
+      <a href="listView.html">List View</a>
+      <a href="login.html">Login</a>
+    </div>
+
+    <header>
+      <span class="sidenavbutton" onclick="openNav()"> &#9776; </span>
+      <h1>Sights</h1>
+    </header>
+
+    <div class="topbar">
+      <table>
+        <tr>
+          <td>
+            <form action="#">
+              <input type="text" placeholder="Search.." name="search" class="searchbox">
+              <button onclick="window.location.href='#';" style="border: 0px; "><img src="Images/SearchIcon.PNG" style="height: 23px;"></button>
+            </form>
+          </td>
+          <td>
+            <div><a href="mapView.html" class="viewLink"><img src="Images/MapIcon.PNG"><span class="viewLabel"> Map View</span></a></div>
+          </td>
+          <td>
+            <div><a href="listView.html" class="viewLink"><img src="Images/ListIcon.PNG"><span class="viewLabel"> List View</span></a></div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="centered">
+      <!--The cards and their content will be dynamically generated using data from the database and an if statement in the back end-->
+      <section class="cards">
+        <!-- /card-one -->
+        <article class="card">
+          <table>
+            <tr>
+              <td rowspan="2"><img class="cardImage" src="Images/FaroeIslands.jpg"></td>
+              <td><a href="details.html"><h3>Tour Title</h3></a></td>
+              <!--The link will be dynamically generated depending on the tour selected - probably use IDs-->
+            </tr>
+            <tr>
+              <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc </td>
+            </tr>
+          </table>
+        </article>
+        <!-- /card-two -->
+        <article class="card">
+          <table>
+            <tr>
+              <td rowspan="2"><img class="cardImage" src="Images/FaroeIslands.jpg"></td>
+              <td><a href="details.html"><h3>Tour Title</h3></a></td>
+              <!--The link will be dynamically generated depending on the tour selected - probably use IDs-->
+            </tr>
+            <tr>
+              <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc </td>
+            </tr>
+          </table>
+        </article>
+        <!-- /card-three -->
+        <article class="card">
+          <table>
+            <tr>
+              <td rowspan="2"><img class="cardImage" src="Images/FaroeIslands.jpg"></td>
+              <td><a href="details.html"><h3>Tour Title</h3></a></td>
+              <!--The link will be dynamically generated depending on the tour selected - probably use IDs-->
+            </tr>
+            <tr>
+              <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc </td>
+            </tr>
+          </table>
+        </article>
+        <!--/card four -->
+        <article class="card">
+          <table>
+            <tr>
+              <td rowspan="2"><img class="cardImage" src="Images/FaroeIslands.jpg"></td>
+              <td><a href="details.html"><h3>Tour Title</h3></a></td>
+              <!--The link will be dynamically generated depending on the tour selected - probably use IDs-->
+            </tr>
+            <tr>
+              <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc </td>
+            </tr>
+          </table>
+        </article>
+        <!--/card five-->
+        <article class="card">
+          <table>
+            <tr>
+              <td rowspan="2"><img class="cardImage" src="Images/FaroeIslands.jpg"></td>
+              <td><a href="details.html"><h3>Tour Title</h3></a></td>
+              <!--The link will be dynamically generated depending on the tour selected - probably use IDs-->
+            </tr>
+            <tr>
+              <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc </td>
+            </tr>
+          </table>
+        </article>
+
+
+      </section>
+    </div>
+
+</body>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+
+</html>
