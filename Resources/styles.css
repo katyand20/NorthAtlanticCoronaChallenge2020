@@ -1,5 +1,6 @@
 /* Order is tags, classes, IDs */
-/* IDs are # classes are . */
+/* IDs are prefixed by # classes are by . */
+/* Order for borders is clockwise starting from top*/
 
 body, html{
   font-family: sans-serif;
@@ -16,6 +17,10 @@ header{
 h1{
   overflow: auto;
   text-align: center;
+}
+
+h3{
+  margin: 5px 0px 3px 0px;
 }
 
 label{
@@ -127,11 +132,10 @@ label{
   float: left;
 }
 
-.viewLink a, a:link, a:visited, a:hover, a:active {
+.viewLink{
   text-decoration: none;
   color: black;
 }
-
 
 .viewLink img {
   height: 23px;
@@ -163,7 +167,32 @@ label{
   font-size: 20px;
 }
 
+/* List - Card layout */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
 
+.card {
+  flex: 0 1 47.5%;
+  background-color: #F0F0F0;
+  padding: 5px 10px;
+  margin: 10px 0px;
+}
 
+.card table tr td {
+  padding: 5px;
+}
+
+.card table tr td a {
+  text-decoration: underline;
+}
+
+.cardImage {
+  height: 150px;
+  width: 150px;
+}
 
 /*Add media queries down here*/
