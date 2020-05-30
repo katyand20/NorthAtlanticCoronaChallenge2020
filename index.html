@@ -13,6 +13,25 @@
   </head>
 
   <body>
-    <span id="sidenav" onclick="openNav()"> &#9776; open </span>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times; </a>
+      <a href="#">Map View</a>
+      <a href="#">List View</a>
+      <a href="#">Login</a>
+    </div>
+
+    <span id="sidenavbutton" onclick="openNav()"> &#9776; </span>
+
   </body>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+
 </html>
