@@ -9,9 +9,17 @@ body, html{
   padding: 0px;
 }
 
+header{
+  padding-left: 10px;
+}
+
 h1{
   overflow: auto;
   text-align: center;
+}
+
+label{
+  font-size: 20px;
 }
 
 /*Navigation*/
@@ -60,6 +68,12 @@ h1{
   .sidenav a {font-size: 18px;}
 }
 
+.loginButton{
+  padding: 10px 25px;
+  border-radius: 12px;
+  margin-bottom:50px;
+}
+
 /*Index - Background Image*/
 .backgroundImageHolder, #backgroundImage{
   width: 100%;
@@ -79,7 +93,8 @@ h1{
   cursor: pointer;
   left: 50%;
   border-radius: 12px;
-  font-size: 20px; 
+  font-size: 20px;
 }
+
 
 /*Add media queries down here*/
