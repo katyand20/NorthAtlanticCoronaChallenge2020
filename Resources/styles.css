@@ -110,6 +110,37 @@ label{
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
 }
 
+.topbar table {
+  width: 100%;
+}
+
+.topbar table tr td {
+  padding: 0px 10px;
+}
+
+.topbar table tr td:first-child {
+  width: 70%;
+}
+
+.searchbox {
+  font-size: 20px;
+  float: left;
+}
+
+.viewLink a, a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: black;
+}
+
+
+.viewLink img {
+  height: 23px;
+}
+
+.viewLabel {
+  vertical-align: top;
+}
+
 /*Index - Background Image*/
 .backgroundImageHolder, #backgroundImage{
   width: 100%;
@@ -131,6 +162,8 @@ label{
   border-radius: 12px;
   font-size: 20px;
 }
+
+
 
 
 /*Add media queries down here*/
