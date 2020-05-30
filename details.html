@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="Team04">
+    <meta name="description" content="Application Index Page">
+    <title>Sights</title>
+    <!--Links-->
+    <link rel="stylesheet" href="Resources/styles.css">
+  </head>
+
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times; </a>
+      <a href="#">Map View</a>
+      <a href="#">List View</a>
+      <a href="login.html">Login</a>
+    </div>
+
+    <header>
+      <span class="sidenavbutton" onclick="openNav()"> &#9776; </span>
+      <h1>Sights</h1>
+    </header>
+
+    <table>
+      <tr>
+        <td style="width:50%">
+          <video width="100%" controls>
+            <source src="Images/Nuuk.mp4" type="video/mp4">
+            <i>Your browser does not support the video.</i>
+          </video>
+        </td>
+        <td style="padding:10px;">
+          <h2>Tour of Nuuk</h2>
+          <p><i>Duration: 1.25</i></p><br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc</p>
+          <!--This button will be replaced with the PayPal supplied one when the PayPal account is created-->
+          <button class="paypal-button">
+            <span class="paypal-button-title">Buy now with </span>
+            <span class="paypal-logo"><i>Pay</i><i>Pal</i></span>
+          </button>
+        </td>
+      </tr>
+    </table>
+
+
+  </body>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+
+</html>
