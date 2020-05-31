@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="author" content="Team04">
-    <meta name="description" content="Application Index Page">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="author" content="Team04" />
+    <meta name="description" content="Application Index Page" />
     <title>Sights</title>
     <!--Links-->
-    <link rel="stylesheet" href="Resources/styles.css">
+    <link rel="stylesheet" href="Resources/styles.css" />
   </head>
 
   <body>
     <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times; </a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        &times;
+      </a>
       <a href="#">Map View</a>
       <a href="#">List View</a>
       <a href="login.html">Login</a>
@@ -25,37 +27,47 @@
 
     <table>
       <tr>
-        <td style="width:50%">
-          <img style="width: 100%" src="Images/Edinburgh.jpg">
+        <td style="width: 50%;">
+          <img src="Images/Edinburgh.jpg" />
         </td>
-        <td style="padding:10px;">
+        <td style="padding: 10px;">
           <h2>Register</h2>
           <form action="#" method="post">
-            <label for="email">Email: </label><br>
-            <input type="text" id="email" name="email"><br><br>
-            <label for="confirmEmail">Confirm Email: </label><br>
-            <input type="text" id="confirmEmail" name="confirmEmail"><br><br>
-            <label for="password">Password: </label><br>
-            <input type="text" id="password" name="password"><br><br>
-            <label for="confirmPassword">Confirm Password: </label><br>
-            <input type="text" id="confirmPassword" name="confirmPassword"><br><br>
+            <label for="email">Email: </label><br />
+            <input type="text" id="email" name="email" /><br /><br />
+            <label for="confirmEmail">Confirm Email: </label><br />
+            <input
+              type="text"
+              id="confirmEmail"
+              name="confirmEmail"
+            /><br /><br />
+            <label for="password">Password: </label><br />
+            <input type="text" id="password" name="password" /><br /><br />
+            <label for="confirmPassword">Confirm Password: </label><br />
+            <input
+              type="text"
+              id="confirmPassword"
+              name="confirmPassword"
+            /><br /><br />
             <!--<input type="submit" value="Submit" class="loginButton"> - Will be this one but for the prototype functionality use the below -->
-            <button onclick="window.location.href='map.html';" class="loginButton">Register</button>
+            <button
+              onclick="window.location.href='map.html';"
+              class="loginButton"
+            >
+              Register
+            </button>
           </form>
         </td>
       </tr>
     </table>
-
-
   </body>
   <script>
     function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById('mySidenav').style.width = '250px';
     }
 
     function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById('mySidenav').style.width = '0';
     }
   </script>
-
 </html>
