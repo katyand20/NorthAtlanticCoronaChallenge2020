@@ -139,6 +139,10 @@ img {
   width: 70%;
 } */
 
+.searchForm {
+  width: 90%;
+}
+
 .searchbox {
   font-size: 20px;
   float: left;
@@ -173,6 +177,7 @@ img {
   width: 30px;
   text-decoration: none;
   color: black;
+  margin: 20px;
 }
 
 /*Index - Background Image*/
