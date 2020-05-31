@@ -228,4 +228,8 @@ img {
   .loginImage {
     display: none;
   }
+
+  #buttonHolder button{
+    padding: 20px 50px;
+  }
 }
