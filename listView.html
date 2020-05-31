@@ -28,48 +28,171 @@
     </header>
 
     <div class="topbar">
-      <table>
-        <tr>
-          <td>
-            <form action="#">
-              <input
-                type="text"
-                placeholder="Search.."
-                name="search"
-                class="searchbox"
-              />
-              <button onclick="window.location.href='#';" style="border: 0px;">
-                <img src="Images/SearchIcon.PNG" style="height: 23px;" />
-              </button>
-            </form>
-          </td>
-          <td>
-            <div>
-              <a href="mapView.html" class="viewLink"
-                ><img src="Images/MapIcon.PNG" /><span class="viewLabel">
-                  Map View</span
-                ></a
-              >
-            </div>
-          </td>
-          <td>
-            <div>
-              <a href="listView.html" class="viewLink"
-                ><img src="Images/ListIcon.PNG" /><span class="viewLabel">
-                  List View</span
-                ></a
-              >
-            </div>
-          </td>
-        </tr>
-      </table>
+      <div class="searchForm">
+        <form action="#">
+          <input
+            type="text"
+            placeholder="Search.."
+            name="search"
+            class="searchbox"
+          />
+          <button onclick="window.location.href='#';" style="border: 0px;">
+            <img src="Images/SearchIcon.PNG" class="searchIcon" />
+          </button>
+        </form>
+      </div>
+      <div class="mapViewLink">
+        <a href="mapView.html" class="viewIcon"
+          ><img src="Images/MapIcon.PNG" /><span class="viewLabel">
+            Map View</span
+          ></a
+        >
+      </div>
+      <div class="listViewLink">
+        <a href="listView.html" class="viewIcon"
+          ><img src="Images/ListIcon.PNG" /><span class="viewLabel">
+            List View</span
+          ></a
+        >
+      </div>
     </div>
 
-    <div class="centered">
+    <div class="cards">
       <!--The cards and their content will be dynamically generated using data from the database and an if statement in the back end-->
-      <section class="cards">
-        <!-- /card-one -->
-        <article class="card">
+      <!-- /card-one -->
+      <div class="card">
+        <div class="cardImage">
+          <img src="Images/FaroeIslands.jpg" />
+        </div>
+        <div class="cardDetails">
+          <div class="cardTitle">
+            <a href="details.html"><h3>Tour Title</h3></a>
+          </div>
+          <!--The link will be dynamically generated depending on the tour selected - probably use IDs-->
+          <div class="cardText">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+              Cum sociis natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra
+              vulputate, felis tellus mollis orci, sed rhoncus sapien nunc
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- /card-two -->
+      <div class="card">
+        <div class="cardImage">
+          <img src="Images/FaroeIslands.jpg" />
+        </div>
+        <div class="cardDetails">
+          <div class="cardTitle">
+            <a href="details.html"><h3>Tour Title</h3></a>
+          </div>
+          <!--The link will be dynamically generated depending on the tour selected - probably use IDs-->
+          <div class="cardText">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+              Cum sociis natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra
+              vulputate, felis tellus mollis orci, sed rhoncus sapien nunc
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- /card-three -->
+      <div class="card">
+        <div class="cardImage">
+          <img src="Images/FaroeIslands.jpg" />
+        </div>
+        <div class="cardDetails">
+          <div class="cardTitle">
+            <a href="details.html"><h3>Tour Title</h3></a>
+          </div>
+          <!--The link will be dynamically generated depending on the tour selected - probably use IDs-->
+          <div class="cardText">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+              Cum sociis natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra
+              vulputate, felis tellus mollis orci, sed rhoncus sapien nunc
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- /card-four -->
+      <div class="card">
+        <div class="cardImage">
+          <img src="Images/FaroeIslands.jpg" />
+        </div>
+        <div class="cardDetails">
+          <div class="cardTitle">
+            <a href="details.html"><h3>Tour Title</h3></a>
+          </div>
+          <!--The link will be dynamically generated depending on the tour selected - probably use IDs-->
+          <div class="cardText">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+              Cum sociis natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra
+              vulputate, felis tellus mollis orci, sed rhoncus sapien nunc
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- /card-five -->
+      <div class="card">
+        <div class="cardImage">
+          <img src="Images/FaroeIslands.jpg" />
+        </div>
+        <div class="cardDetails">
+          <div class="cardTitle">
+            <a href="details.html"><h3>Tour Title</h3></a>
+          </div>
+          <!--The link will be dynamically generated depending on the tour selected - probably use IDs-->
+          <div class="cardText">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+              Cum sociis natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra
+              vulputate, felis tellus mollis orci, sed rhoncus sapien nunc
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- /card-six -->
+      <div class="card">
+        <div class="cardImage">
+          <img src="Images/FaroeIslands.jpg" />
+        </div>
+        <div class="cardDetails">
+          <div class="cardTitle">
+            <a href="details.html"><h3>Tour Title</h3></a>
+          </div>
+          <!--The link will be dynamically generated depending on the tour selected - probably use IDs-->
+          <div class="cardText">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+              Cum sociis natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra
+              vulputate, felis tellus mollis orci, sed rhoncus sapien nunc
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- /card-two -->
+      <!-- <article class="card">
           <table>
             <tr>
               <td rowspan="2">
@@ -77,9 +200,9 @@
               </td>
               <td>
                 <a href="details.html"><h3>Tour Title</h3></a>
-              </td>
-              <!--The link will be dynamically generated depending on the tour selected - probably use IDs-->
-            </tr>
+              </td> -->
+      <!--The link will be dynamically generated depending on the tour selected - probably use IDs-->
+      <!-- </tr>
             <tr>
               <td>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
@@ -92,9 +215,9 @@
               </td>
             </tr>
           </table>
-        </article>
-        <!-- /card-two -->
-        <article class="card">
+        </article> -->
+      <!-- /card-three -->
+      <!-- <article class="card">
           <table>
             <tr>
               <td rowspan="2">
@@ -102,9 +225,9 @@
               </td>
               <td>
                 <a href="details.html"><h3>Tour Title</h3></a>
-              </td>
-              <!--The link will be dynamically generated depending on the tour selected - probably use IDs-->
-            </tr>
+              </td> -->
+      <!--The link will be dynamically generated depending on the tour selected - probably use IDs-->
+      <!-- </tr>
             <tr>
               <td>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
@@ -117,9 +240,9 @@
               </td>
             </tr>
           </table>
-        </article>
-        <!-- /card-three -->
-        <article class="card">
+        </article> -->
+      <!--/card four -->
+      <!-- <article class="card">
           <table>
             <tr>
               <td rowspan="2">
@@ -127,9 +250,9 @@
               </td>
               <td>
                 <a href="details.html"><h3>Tour Title</h3></a>
-              </td>
-              <!--The link will be dynamically generated depending on the tour selected - probably use IDs-->
-            </tr>
+              </td> -->
+      <!--The link will be dynamically generated depending on the tour selected - probably use IDs-->
+      <!-- </tr>
             <tr>
               <td>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
@@ -142,9 +265,9 @@
               </td>
             </tr>
           </table>
-        </article>
-        <!--/card four -->
-        <article class="card">
+        </article> -->
+      <!--/card five-->
+      <!-- <article class="card">
           <table>
             <tr>
               <td rowspan="2">
@@ -152,9 +275,9 @@
               </td>
               <td>
                 <a href="details.html"><h3>Tour Title</h3></a>
-              </td>
-              <!--The link will be dynamically generated depending on the tour selected - probably use IDs-->
-            </tr>
+              </td> -->
+      <!--The link will be dynamically generated depending on the tour selected - probably use IDs-->
+      <!-- </tr>
             <tr>
               <td>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
@@ -165,35 +288,9 @@
                 pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien
                 nunc
               </td>
-            </tr>
-          </table>
-        </article>
-        <!--/card five-->
-        <article class="card">
-          <table>
-            <tr>
-              <td rowspan="2">
-                <img class="cardImage" src="Images/FaroeIslands.jpg" />
-              </td>
-              <td>
-                <a href="details.html"><h3>Tour Title</h3></a>
-              </td>
-              <!--The link will be dynamically generated depending on the tour selected - probably use IDs-->
-            </tr>
-            <tr>
-              <td>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-                accumsan et viverra justo commodo. Proin sodales pulvinar
-                tempor. Cum sociis natoque penatibus et magnis dis parturient
-                montes, nascetur ridiculus mus. Nam fermentum, nulla luctus
-                pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien
-                nunc
-              </td>
-            </tr>
-          </table>
-        </article>
-      </section>
+            </tr> -->
+      <!-- </table> -->
+      <!-- </article> -->
     </div>
   </body>
   <script>

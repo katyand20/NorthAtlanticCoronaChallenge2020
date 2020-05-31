@@ -124,21 +124,29 @@ img {
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
 }
 
-.topbar table {
-  width: 100%;
+.topbar {
+  /* width: 100%; */
+  display: flex;
+  /* grid-template-columns: 1fr, 1fr, 1fr; */
+  margin: 20px;
 }
 
-.topbar table tr td {
+/* .topbar table tr td {
   padding: 0px 10px;
 }
 
 .topbar table tr td:first-child {
   width: 70%;
-}
+} */
 
 .searchbox {
   font-size: 20px;
   float: left;
+}
+
+.searchIcon {
+  height: 23px;
+  width: 23px;
 }
 
 .viewLink {
@@ -152,6 +160,19 @@ img {
 
 .viewLabel {
   vertical-align: top;
+  text-decoration: none;
+  color: black;
+}
+
+/* .viewIcon {
+  width: 20px;
+} */
+
+.mapViewLink,
+.listViewLink {
+  width: 50px;
+  text-decoration: none;
+  color: black;
 }
 
 /*Index - Background Image*/
@@ -190,30 +211,26 @@ img {
 
 /* List - Card layout */
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 10px 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin: 20px;
 }
 
 .card {
-  flex: 0 1 47.5%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr, 1fr;
+  padding: 10px;
   background-color: #f0f0f0;
-  padding: 5px 10px;
-  margin: 10px 0px;
-}
-
-.card table tr td {
-  padding: 5px;
-}
-
-.card table tr td a {
-  text-decoration: underline;
 }
 
 .cardImage {
   height: 150px;
   width: 150px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
 }
 
 /* Media queries */
@@ -227,5 +244,12 @@ img {
 
   .loginImage {
     display: none;
+  }
+
+  /* List - Card layout */
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
   }
 }
