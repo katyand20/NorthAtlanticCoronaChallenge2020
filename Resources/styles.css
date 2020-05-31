@@ -1,5 +1,6 @@
 /* Order is tags, classes, IDs */
-/* IDs are # classes are . */
+/* IDs are prefixed by # classes are by . */
+/* Order for borders is clockwise starting from top*/
 
 body,
 html {
@@ -17,6 +18,10 @@ header {
 h1 {
   overflow: auto;
   text-align: center;
+}
+
+h3 {
+  margin: 5px 0px 3px 0px;
 }
 
 label {
@@ -136,11 +141,7 @@ img {
   float: left;
 }
 
-.viewLink a,
-a:link,
-a:visited,
-a:hover,
-a:active {
+.viewLink {
   text-decoration: none;
   color: black;
 }
@@ -176,7 +177,7 @@ a:active {
   font-size: 20px;
 }
 
-/* Login */
+/* Login - Grid */
 .loginContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -186,15 +187,43 @@ a:active {
   padding: 10px 15px;
 }
 
+/* List - Card layout */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+
+.card {
+  flex: 0 1 47.5%;
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  margin: 10px 0px;
+}
+
+.card table tr td {
+  padding: 5px;
+}
+
+.card table tr td a {
+  text-decoration: underline;
+}
+
+.cardImage {
+  height: 150px;
+  width: 150px;
+}
+
+.loginImage {
+  display: none;
+}
+
 /* Media queries */
 @media only screen and (max-width: 600px) {
   /* Login */
   .loginContainer {
     display: flex;
     justify-content: center;
-  }
-
-  .loginImage {
-    display: none;
   }
 }
